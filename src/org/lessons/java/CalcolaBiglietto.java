@@ -2,7 +2,7 @@ package org.lessons.java;
 
 import java.util.Scanner;
 
-public class Main {
+public class CalcolaBiglietto {
 
     public static void main(String[] args) {
 
@@ -25,9 +25,13 @@ public class Main {
         } else if (age >= 65) {
             totalPrice *= discountOver;
         }
+        
 
-        System.out.println("Il prezzo totale del viaggio è: " + totalPrice + "€");
+        System.out.print("Il prezzo totale del viaggio è: ");
+        System.out.printf("%.2f", totalPrice);
+        System.out.print("€");
 
     }
 }
+
 
